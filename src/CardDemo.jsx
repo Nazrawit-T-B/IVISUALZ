@@ -21,7 +21,7 @@ export default function CardDemo() {
       </SpotlightCard>
       <SpotlightCard
         title="Ceaser's Cipher"
-        description="This card has a custom glow color, making it stand out even more when you hover over it."
+        description="Understand the basics of encryption and decryption using the classic Ceaser's Cipher technique."
         glowColor="bg-emerald-500/60 dark:bg-emerald-400/60"
            className="bg-[url('./ib.png')] bg-cover  justify-center"
       >
@@ -34,7 +34,7 @@ export default function CardDemo() {
       </SpotlightCard>
       <SpotlightCard
         title="Sorting Algorithms"
-        description="This card has a custom glow color, making it stand out even more when you hover over it."
+        description="Learn how different sorting algorithms work and compare their efficiency in real-time."
         glowColor="bg-blue-500/60 dark:bg-blue-400/60"
         className="bg-[url('./ii.png')] bg-cover  justify-center"
       >
@@ -46,8 +46,8 @@ export default function CardDemo() {
         </button>
       </SpotlightCard>
       <SpotlightCard
-        title="Custom Glow Card"
-        description="This card has a custom glow color, making it stand out even more when you hover over it."
+        title="Hash Functions and Collisions"
+        description="Explore how hash functions work and understand the concept of collisions in hashing."
         glowColor="bg-emerald-500/60 dark:bg-emerald-400/60"
         className="bg-[url('./green.png')] bg-cover  justify-center"
       >
@@ -59,10 +59,10 @@ export default function CardDemo() {
         </button>
       </SpotlightCard>
           <SpotlightCard
-        title="Custom Glow Card"
-        description="This card has a custom glow color, making it stand out even more when you hover over it."
+        title="Dijkistra's Algorithm"
+        description="Visualize how Dijkstra's algorithm finds the shortest path in a graph, step by step."
         glowColor="bg-emerald-500/60 dark:bg-emerald-400/60"
-        className="bg-[url('./green.png')] bg-cover  justify-center"
+        className="bg-[url('./ii.png')] bg-cover  justify-center"
       >
         <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90 mr-5">
           Visualize
@@ -72,10 +72,10 @@ export default function CardDemo() {
         </button>
       </SpotlightCard>
           <SpotlightCard
-        title="Custom Glow Card"
-        description="This card has a custom glow color, making it stand out even more when you hover over it."
+        title="Path Finding and Maze Generation"
+        description="Understand how programs can generate mazes and find paths through them using various algorithms."
         glowColor="bg-emerald-500/60 dark:bg-emerald-400/60"
-        className="bg-[url('./green.png')] bg-cover  justify-center"
+        className="bg-[url('./ib.png')] bg-cover  justify-center"
       >
         <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90 mr-5">
           Visualize
