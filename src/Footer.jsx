@@ -14,14 +14,20 @@ const Footer=()=>{
                     <div>
                         <h6>For General Inquires</h6>
                         <p>nazrawitbezabih@gmail.com</p>
+                        <h6>For General Inquires</h6>
+                        <p>nazrawitbezabih@gmail.com</p>
+                        <h6>For General Inquires</h6>
+                        <p>nazrawitbezabih@gmail.com</p>
+                        <h6>For General Inquires</h6>
+                        <p>nazrawitbezabih@gmail.com</p>
                     </div>
                     <div>
-                        <h6>Pages </h6>
+                        <h4>Pages </h4>
                         <ul>
                             <li><a href="">About</a></li>
                             <li><a href="">Contact</a></li>
                         </ul>
-                        <h6>Visuals</h6>
+                        <h4>Visuals</h4>
                         <ul>
                              <li><a href="">Huffman Coding</a></li>
                             <li><a href="">Ceaser's Cipher</a></li>

@@ -46,7 +46,7 @@ const ProductCard = () => {
                 </FieldLabel>
                 <Textarea
                   id="checkout-7j9-optional-comments"
-                  placeholder="Add any additional comments"
+                  placeholder="Write down tools you want included "
                   className="resize-none"
                 />
               </Field>
