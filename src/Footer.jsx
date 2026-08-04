@@ -37,7 +37,6 @@ const Footer=()=>{
                 </div>
             </div>
             <div className="emailing-section">
-                <ProductCard/>
             </div>
             </div>
         </footer>
