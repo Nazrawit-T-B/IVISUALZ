@@ -8,11 +8,11 @@
 }
 
 .title {
-  width: 75%; 
+  width:50%; 
 }
 
 .title h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 1.25;      
   letter-spacing: -0.01em; 
   font-weight: 700;
@@ -22,9 +22,18 @@
 .sub-title {
   font-size: 1.125rem;
   color: #6b7280;
+  width:50%;
 }
-
+.top-title{
+  color:white;
+  margin:0;
+}
 .Btns {
   display: flex;
   gap: 0.5rem;
 }
+ @media (max-width: 760px){
+   .title{
+    width:100%;
+   }
+  }

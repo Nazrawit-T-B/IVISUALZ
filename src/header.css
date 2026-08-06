@@ -2,32 +2,52 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
-
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
+.mono{
+    font-family: 'IBM Plex Mono', monospace;
+    letter-spacing: 0.02em;
+  }
 @custom-variant dark (&:is(.dark *));
 
-
-header{
-  display:flex;
-   justify-content:space-between;
-   padding:5px;
-   padding-bottom:0;
-   margin:0 ;
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  padding-bottom: 0;
+  margin: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg);
+  backdrop-filter:blur(14px);
+  height:72px;
+  border-bottom: 1px solid var(--border);
+  font-family:var(--font-heading);
 }
 
-header ul{
-  display:flex;
-  gap:20px;
-  list-style:none;
-  padding:0;
-  justify-content:center;
-  align-items:center;
+header ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
 }
-.header-right{
-  display:flex;
-  gap:20px;
-  justify-content:center;
-  align-items:center;
+header li:hover{
+  font-size:17px;
 }
-li{
-    font-size:16px;
+.header-right {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
+li {
+  font-size: 16px;
+}
+h1{
+  margin-right:20px;
+}
+ @media (max-width: 760px){
+    header ul{ display: none; }
+  }
