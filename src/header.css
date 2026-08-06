@@ -45,8 +45,9 @@ header li:hover{
 li {
   font-size: 16px;
 }
-h1{
+header h1{
   margin-right:20px;
+  padding-left:15px;
 }
  @media (max-width: 760px){
     header ul{ display: none; }

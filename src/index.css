@@ -13,6 +13,7 @@
   --text: #6b6375;
   --text-h: #08060d;
   --bg: #fff;
+   --bg-elevated:#1a1c22;
   --font-heading: "Space Grotesk", sans-serif;
   --code-bg: #f4f3ec;
   --accent: oklch(0.97 0 0);
@@ -122,10 +123,22 @@
   }
 }
 
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: var(--bg);
   color: var(--text);
-  margin: 10px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 p {
