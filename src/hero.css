@@ -1,15 +1,14 @@
 .hero {
   margin: 30px;
-  margin-top: 50px;
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-bottom:5%;
-
+  margin-bottom:10%;
 }
 
 .title {
-  width:50%; 
+  width:60%; 
 }
 
 .title h1 {
@@ -25,10 +24,7 @@
   color: #6b7280;
   width:50%;
 }
-.top-title{
-  color:white;
-  margin:0;
-}
+
 .Btns {
   display: flex;
   gap: 0.5rem;

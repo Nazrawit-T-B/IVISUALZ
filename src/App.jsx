@@ -2,7 +2,6 @@ import Header from "./Header";
 import Hero from "./Hero";
 import CardDemo from "./CardDemo";
 import Footer from "./Footer";
-import { Separator } from "@/components/ui/separator";
 import EmailSection from "./EmailSection";
 import Process from "./Process";
 const App = () => {
@@ -26,7 +25,6 @@ const App = () => {
         </div>
       </div>
       <Process />
-      <Separator className="bg-gray-800 dark:bg-gray-900 my-2" />
       <EmailSection />
       <Footer />
     </>

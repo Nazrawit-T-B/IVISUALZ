@@ -6,11 +6,11 @@ import { Label } from "@/components/ui/label";
 const EmailSection = () => {
   return (
     <>
-      <div className="email pb-15">
-        <div className="w-full ml-8 mt-0">
-          <p className=" text-white pt-3">DON'T SEE IT HERE? </p>
-          <h3>Request a visual and we'll build it</h3>
-          <p className="pt-5 ">
+      <div className="email p-10 mt-20 mb-20">
+        <div className="w-full ml-8 mt-10">
+          <p className=" text-white tracking-widest pt-5">DON'T SEE IT HERE? </p>
+          <h2>Request a visual and we'll build it</h2>
+          <p className=" text-white  pt-5">
             Tell us the algorithm you want to see featured. When it is live we
             will notify you!
           </p>

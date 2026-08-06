@@ -2,7 +2,7 @@ import ProductCard from "src/components/shadcn-space/card/card-03.jsx";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-gray-800 bg-gray-950 text-gray-400">
+    <footer className="border-t  bg-gray-950 text-gray-400">
   <div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
     
     {/* Top Section */}
