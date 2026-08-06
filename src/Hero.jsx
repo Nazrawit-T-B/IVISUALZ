@@ -17,7 +17,7 @@ const Hero=()=>{
                 Built for Students and Passionate Enthusaists
             </div>
             <div className="Btns">
-                <Button variant="outline" size="lg" className="text-gray-700"> Explore</Button>
+                <Button variant="outline" size="lg" className="text-white bg-black"> Explore</Button>
                 <Button variant="outline" size="lg" className="text-gray-700 bg-transparent"> Know More</Button>
             </div>
         </div>

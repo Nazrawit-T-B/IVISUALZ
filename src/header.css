@@ -34,7 +34,7 @@ header ul {
   align-items: center;
 }
 header li:hover{
-  font-size:17px;
+  color:white;
 }
 .header-right {
   display: flex;
