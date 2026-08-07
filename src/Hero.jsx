@@ -8,7 +8,7 @@ const Hero = () => {
       <div className="flex flex-col md:flex-row items-stretch justify-between gap-x-10 min-h-[70vh] w-full max-w-7xl mx-auto px-6">
         <div className="hero w-full md:w-[60%]">
           <div>
-          <p>A</p>
+          <p>ALGORITHMS MADE VISUAL</p>
           </div>
           <div className="title flex flex-col gap-2">
             <h1>
