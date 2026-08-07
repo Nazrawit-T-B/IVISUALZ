@@ -1,11 +1,10 @@
 import { InputGroup, InputGroupInput } from "@/components/ui/input-group";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { IconBrandGithub, IconSun, IconMoon } from "@tabler/icons-react";
+import { IconBrandGithub } from "@tabler/icons-react";
 import "./header.css";
-import { useTheme } from "next-themes";
+
 const Header = () => {
-  const { theme, setTheme } = useTheme();
   return (
     <>
       <header>
@@ -15,13 +14,16 @@ const Header = () => {
         <div className="header-right">
           <ul>
             <li>
-              <a href="#">Algorithms</a>
+              {/* Point directly to the #algorithms id element */}
+              <a href="#algorithms">Algorithms</a>
             </li>
             <li>
-              <a href="#">How it Works</a>
+              {/* Point directly to the #how-it-works id element */}
+              <a href="#how-it-works">How it works</a>
             </li>
             <li>
-              <a href="#">About</a>
+              {/* Point directly to the #about id element */}
+              <a href="#about">About</a>
             </li>
             <Separator
               orientation="vertical"
@@ -29,7 +31,7 @@ const Header = () => {
             />
             <li>
               <Button variant="outline" size="icon" aria-label="GitHub">
-                <a href="https://github.com/Nazrawit-T-B">
+                <a href="https://github.com" target="_blank" rel="noreferrer">
                   <IconBrandGithub className="h-4 w-4" />
                 </a>
               </Button>

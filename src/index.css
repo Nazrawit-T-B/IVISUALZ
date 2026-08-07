@@ -141,6 +141,17 @@ body {
   overflow-x: hidden;
 }
 
+button[data-slot="button"],
+button:not([data-slot]) {
+  transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+}
+
+button[data-slot="button"]:hover,
+button:not([data-slot]):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
 p {
   margin: 0;
 }
@@ -235,6 +246,7 @@ code {
   }
   html {
     @apply font-sans;
+    scroll-behavior:smooth;
   }
   h1 {
     @apply text-4xl font-bold tracking-tight;
@@ -248,4 +260,18 @@ code {
   h4 {
     @apply text-xl font-semibold tracking-tight;
   }
+}
+@keyframes appear{
+  from {
+    opacity:0;
+    scale:0.5;
+  }
+  to{
+    opacity:1;
+    scale:1;
+  }
+}
+.block{
+  animation:appear linear;
+  animation-timeline:view();
 }
