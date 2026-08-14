@@ -7,11 +7,11 @@ import {
   CardHeader,
   CardTitle,
 } from "./components/ui/card";
-import { Badge } from "@/components/ui/badge"
+import { Badge } from "@/components/ui/badge";
+import { Link } from "react-router-dom";
 export default function CardDemo() {
   return (
     <div className="m-8 grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
-
       <Card className="relative mx-auto w-full max-w-sm pt-0 flex flex-col h-full">
         <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
         <img
@@ -25,16 +25,20 @@ export default function CardDemo() {
           </CardAction>
           <CardTitle>Huffman Coding</CardTitle>
           <CardDescription className="flex-grow">
-            Explore the concept of Huffman coding, a lossless data compression algorithm that uses variable-length codes for efficient encoding.
+            Explore the concept of Huffman coding, a lossless data compression
+            algorithm that uses variable-length codes for efficient encoding.
           </CardDescription>
         </CardHeader>
         <CardFooter className="mt-auto flex gap-3">
-          <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90 mr-5">
-          Visualize
-        </button>
-        <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
-          Learn More
-        </button>
+          <Link to="/visualize/huffman">
+            <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90 mr-5">
+              Visualize
+            </button>
+          </Link>
+
+          <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
+            Learn More
+          </button>
         </CardFooter>
       </Card>
       <Card className="relative mx-auto w-full max-w-sm pt-0 flex flex-col h-full">
@@ -50,16 +54,21 @@ export default function CardDemo() {
           </CardAction>
           <CardTitle>Ceaser's Cipher</CardTitle>
           <CardDescription className="flex-grow">
-            Understand the basics of encryption and decryption using the classic Ceaser's Cipher technique.
+            Understand the basics of encryption and decryption using the classic
+            Ceaser's Cipher technique.
           </CardDescription>
         </CardHeader>
         <CardFooter className="mt-auto flex gap-3">
+          <Link to="/visualize/ceasersCipher">
           <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90 mr-5">
-          Visualize
-        </button>
-        <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
-          Learn More
-        </button>
+            Visualize
+          </button>
+          </Link>
+          <Link to="/learn/ceasersCipher">
+          <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
+            Learn More
+          </button>
+          </Link>
         </CardFooter>
       </Card>
 
@@ -76,16 +85,17 @@ export default function CardDemo() {
           </CardAction>
           <CardTitle className="flex-grow">Sorting Algorithms</CardTitle>
           <CardDescription>
-            Understand the basics of encryption and decryption using the classic Ceaser's Cipher technique.
+            Understand the basics of encryption and decryption using the classic
+            Ceaser's Cipher technique.
           </CardDescription>
         </CardHeader>
         <CardFooter className="mt-auto flex gap-3">
           <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90 mr-5">
-          Visualize
-        </button>
-        <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
-          Learn More
-        </button>
+            Visualize
+          </button>
+          <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
+            Learn More
+          </button>
         </CardFooter>
       </Card>
 
@@ -102,16 +112,17 @@ export default function CardDemo() {
           </CardAction>
           <CardTitle>Hash Functions and Collisons</CardTitle>
           <CardDescription className="flex-grow">
-            Understand the basics of encryption and decryption using the classic Ceaser's Cipher technique.
+            Understand the basics of encryption and decryption using the classic
+            Ceaser's Cipher technique.
           </CardDescription>
         </CardHeader>
         <CardFooter className="mt-auto flex gap-3">
           <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90 mr-5">
-          Visualize
-        </button>
-        <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
-          Learn More
-        </button>
+            Visualize
+          </button>
+          <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
+            Learn More
+          </button>
         </CardFooter>
       </Card>
 
@@ -128,16 +139,17 @@ export default function CardDemo() {
           </CardAction>
           <CardTitle>Dijisktras Algorithm</CardTitle>
           <CardDescription className="flex-grow">
-            Understand the basics of encryption and decryption using the classic Ceaser's Cipher technique.
+            Understand the basics of encryption and decryption using the classic
+            Ceaser's Cipher technique.
           </CardDescription>
         </CardHeader>
         <CardFooter className="mt-auto flex gap-3">
           <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90 mr-5">
-          Visualize
-        </button>
-        <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
-          Learn More
-        </button>
+            Visualize
+          </button>
+          <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
+            Learn More
+          </button>
         </CardFooter>
       </Card>
 
@@ -154,20 +166,19 @@ export default function CardDemo() {
           </CardAction>
           <CardTitle>Path Finding and Maze Generation</CardTitle>
           <CardDescription className="flex-grow">
-            Understand the basics of encryption and decryption using the classic Ceaser's Cipher technique.
+            Understand the basics of encryption and decryption using the classic
+            Ceaser's Cipher technique.
           </CardDescription>
         </CardHeader>
         <CardFooter className="mt-auto flex gap-3">
           <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90 mr-5">
-          Visualize
-        </button>
-        <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
-          Learn More
-        </button>
-        </CardFooter >
+            Visualize
+          </button>
+          <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
+            Learn More
+          </button>
+        </CardFooter>
       </Card>
-
-    
     </div>
   );
 }
