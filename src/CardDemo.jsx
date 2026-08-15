@@ -35,16 +35,17 @@ export default function CardDemo() {
               Visualize
             </button>
           </Link>
-
+<Link to="/learn/huffman">
           <button className="mt-4 rounded-md bg-primary px-4 py-2 text-sm text-primary-foreground hover:bg-primary/90">
             Learn More
           </button>
+          </Link>
         </CardFooter>
       </Card>
       <Card className="relative mx-auto w-full max-w-sm pt-0 flex flex-col h-full">
         <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
         <img
-          src="https://avatar.vercel.sh/shadcn1"
+          src="./image.png"
           alt="Event cover"
           className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
         />

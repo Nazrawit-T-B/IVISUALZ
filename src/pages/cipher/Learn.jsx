@@ -1,69 +1,38 @@
+import Header from "@/Header";
 import "./cipher.css";
+import { Separator } from 'src/components/ui/separator'
 const Learn = () => {
   return (
     <>
-      <div>
-        <h1>Ceaser's Cipher</h1>
-        <p>
-          I learned about Ceaser's Cipher for the first time in Big Book Small
-          Python Projects book by _____
-        </p>
-        <p>
-          {" "}
-          This cipher algortihm is the oldest encryption method used by Julius
-          Caesar. It encrypts letters by shifting them over by a certain number
-          of places in the alphabet.{" "}
-        </p>
-        <p>
-          {" "}
-          The Caesar Cipher demonstrates important concepts used throughout
-          modern encryption:
-        </p>
-        <ul>
-          <li> Character encoding</li>
-          <li>Modular arithmetic</li>
-          <li>Secret Keys</li>
-          <li>Reversible Algorithms</li>
-          <li>Brute-force attacks</li>
-          <li>Frequency analysis</li>
-        </ul>
-        <p>
-          {" "}
-          Mastering this simple cipher builds intution for more advanced
-          algorithms like Vigenere, AES and RSA
-        </p>
+      <Header />
+      <div className="flex flex-col md:flex-row items-stretch justify-between gap-x-10 min-h-[50vh] w-full max-w-57xl mx-auto px-6">
+        <div className="hero w-full md:w-[50%]">
+          <div>
+            <p>CRYPTOGRAPHY</p>
+          </div>
+          <div className="title flex flex-col gap-2">
+            <h1>Caesar's Cipher</h1>
+          </div>
+          <div className="sub-title">
+            <p>
+              The oldest encryption method on record- attirbuted to Julius
+              Caesar
+            </p>
+          </div>
+        </div>
+        <div className="hidden md:block md:w-[40%] relative min-h-[300px] md:min-h-full [mask-image:radial-gradient(circle,black_60%,transparent_100%)] pt-15">
+          <div class="disk-section"></div>
+        </div>
       </div>
-      <div>
+      <Separator className="bg-gray-800 dark:bg-gray-900 my-4" />
+      <div className="algo-description p-5">
+        <h1>What is Caesar's Cipher ? </h1>
+        <br/>
+        <p> The Caesar Cipher is one of the simplest and earliest encryption methods, substituting letters by shifting them a fixed number of positions in the alphabet, laying the foundation for modern cryptographic techniques. While the Caesar Cipher is easy to implement and useful for educational purposes, its limited keyspace and vulnerablity to brute force and frequency analysis make it unsuitable for serious encryption needs.</p>
+        <br/>
+        <p> In the Caesar Cipher, letters in plain text are replaced by other letters or symbols by shifting them a fixed number of positions in the alphabet. This encryption falls under Substitution ciphers.</p>
+        <br/>
         <h1>How it Works</h1>
-        <p>
-          Like most cipher programs, the Caesar cipher works by translating
-          characters into numbers, performing some math operations on those
-          numbers, and translating the numbers back into text characters.
-        </p>
-        <h2>Key Terms </h2>
-        <ol>
-            <li> Key- Length of the shift</li>
-            <li>Symbols- Text characters</li>
-        </ol>
-        <h2>Step by Step Approach</h2>
-        <ol>
-          <li>Choose a shift value - also called the key </li>
-          <li>Move each letter forward by that amount</li>
-          <li>Wrap around after Z back to A</li>
-          <li>Preserve spaces and punctuation</li>
-        </ol>
-        <h2>Formula</h2>
-        <h3>Encryption</h3>
-        <p>E(x) = (x + k) mod</p>
-        <h3>Decryption</h3>
-        <p>D(x) = (x - k) mod</p>
-        <p>Where: </p>
-        <ul>
-            <li>x= current letter</li>
-            <li>k= shift amount</li>
-            <li>26= amount of letters in the English alphabet</li>
-        </ul>
-        <h1>Alphabet Wheel</h1>
       </div>
     </>
   );
