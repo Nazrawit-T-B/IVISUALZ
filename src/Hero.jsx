@@ -1,18 +1,16 @@
 import { Button } from "./components/ui/button";
 import "./hero.css";
-import StrokeText from "./components/StrokeText";
-import LetterGlitch from "./components/LetterGlitch";
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col md:flex-row items-stretch justify-between gap-x-10 min-h-[70vh] w-full max-w-7xl mx-auto px-6">
-        <div className="hero w-full md:w-[60%]">
-          <div>
+      
+        <div className="hero  pl-4">
+          <div className="pt-0">
             <p>ALGORITHMS MADE VISUAL</p>
           </div>
-          <div className="title flex flex-col gap-2">
+          <div className="title flex flex-col gap-2 w-full md:w-[70%]">
             <h1>
-              Interesting <em>Algorithms</em> and Comp Sci concepts Visualized for better
+              Interesting Algorithms and Comp Sci concepts Visualized for better
               learning and Understanding
             </h1>
           </div>
@@ -36,19 +34,6 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="hidden md:block md:w-[40%] relative min-h-[300px] md:min-h-full [mask-image:radial-gradient(circle,black_60%,transparent_100%)] pt-15">
-          <LetterGlitch
-            glitchSpeed={50}
-            centerVignette={true}
-            outerVignette={false}
-            smooth
-            speed={45}
-            colors={["#ffffff", "#b1b1b1", "#9f9f9f"]}
-            showCenterVignette
-            showOuterVignette
-          />
-        </div>
-      </div>
     </>
   );
 };

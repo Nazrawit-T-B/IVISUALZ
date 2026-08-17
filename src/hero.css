@@ -1,27 +1,18 @@
 .hero {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  margin-top:10%;
-}
-
-.top-title{
-  margin:0;
-  padding:0;
 }
 
 .title h1 {
   font-size: 2rem;
   line-height: 1.25;      
   letter-spacing: -0.01em; 
-  font-weight: 700;
-  margin: 0;
-  
+  font-weight: 700; 
 }
 
 .sub-title {
   font-size: 1.125rem;
-  color: #6b7280;
+  color: white;
   width:50%;
 }
 
@@ -34,3 +25,13 @@
     width:100%;
    }
   }
+.hero p {
+  margin: 0;
+}
+.title h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}

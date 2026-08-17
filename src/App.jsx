@@ -28,7 +28,7 @@ const App = () => {
         className="min-h-screen py-12 overflow-hidden"
         style={{
           width: "100%",
-          background: "var(--bg-elevated)",
+          background: "var(--bg)",
         }}
       >
         <div className="w-full px-10">

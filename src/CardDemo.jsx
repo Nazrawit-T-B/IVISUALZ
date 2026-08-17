@@ -9,9 +9,10 @@ import {
 } from "./components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "react-router-dom";
+import { Separator } from "@/components/ui/separator";
 export default function CardDemo() {
   return (
-    <div className="m-8 grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="m-5 grid grid-cols-1 place-items-center gap-4 sm:grid-cols-2 lg:grid-cols-3">
       <Card className="relative mx-auto w-full max-w-sm pt-0 flex flex-col h-full">
         <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
         <img
@@ -45,7 +46,7 @@ export default function CardDemo() {
       <Card className="relative mx-auto w-full max-w-sm pt-0 flex flex-col h-full">
         <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
         <img
-          src="./image.png"
+          src="./i3.png"
           alt="Event cover"
           className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
         />
@@ -76,7 +77,7 @@ export default function CardDemo() {
       <Card className="relative mx-auto w-full max-w-sm pt-0 flex flex-col h-full">
         <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
         <img
-          src="https://avatar.vercel.sh/shadcn1"
+          src="./i4.png"
           alt="Event cover"
           className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
         />
@@ -103,7 +104,7 @@ export default function CardDemo() {
       <Card className="relative mx-auto w-full max-w-sm pt-0 flex flex-col h-full">
         <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
         <img
-          src="https://avatar.vercel.sh/shadcn1"
+          src="./i5.png"
           alt="Event cover"
           className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
         />
@@ -130,7 +131,7 @@ export default function CardDemo() {
       <Card className="relative mx-auto w-full max-w-sm pt-0 flex flex-col h-full">
         <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
         <img
-          src="https://avatar.vercel.sh/shadcn1"
+          src="./i2.png"
           alt="Event cover"
           className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
         />
@@ -157,7 +158,7 @@ export default function CardDemo() {
       <Card className="relative mx-auto w-full max-w-sm pt-0 flex flex-col h-full">
         <div className="absolute inset-0 z-30 aspect-video bg-black/35" />
         <img
-          src="https://avatar.vercel.sh/shadcn1"
+          src="./i5.png"
           alt="Event cover"
           className="relative z-20 aspect-video w-full object-cover brightness-60 grayscale dark:brightness-40"
         />
@@ -180,6 +181,8 @@ export default function CardDemo() {
           </button>
         </CardFooter>
       </Card>
+        <Separator className="bg-gray-900 my-1" />
     </div>
+    
   );
 }
