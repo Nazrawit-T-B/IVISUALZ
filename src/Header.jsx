@@ -9,16 +9,16 @@ const Header = () => {
     <>
       <header className="w-full  mx-auto px-6 py-3 flex items-center justify-between">
         <div className="flex items-center gap-1">
-          <h1 className="text-xl font-bold tracking-tight m-0 text-white">IVISUALZ</h1>
+          <h1 className="text-xl font-bold tracking-tight m-0 text-black font-sans ">IVISUALZ</h1>
         </div>
         
         <div className="header-right">
           <ul className="flex items-center gap-6 list-none m-0 p-0">
             <li>
-              <a href="#algorithms" className="text-sm text-gray-300 hover:text-white transition-colors">Algorithms</a>
+              <a href="#algorithms" className="text-sm text-black font-mono hover:text-amber-800 transition-colors">ALGORITHMS</a>
             </li>
             <li>
-              <a href="#how-it-works" className="text-sm text-gray-300 hover:text-white transition-colors">How it works</a>
+              <a href="#how-it-works" className="text-sm text-black font-mono hover:text-white transition-colors">HOW IT WORKS</a>
             </li>
             <li>
               <a href="#about" className="text-sm text-gray-300 hover:text-white transition-colors">About</a>
