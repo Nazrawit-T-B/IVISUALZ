@@ -23,18 +23,12 @@ const App = () => {
         id="algorithms"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: false, amount: 0.15 }} // Animates once when 15% of the item is visible
+        viewport={{ once: false, amount: 0.15 }}
         variants={fadeUpVariants}
-        className="min-h-screen py-12 overflow-hidden"
-        style={{
-          width: "100%",
-          background: "var(--bg)",
-        }}
+        className="section-shell overflow-hidden"
       >
-        <div className="w-full px-10">
-          <p className="text-white tracking-widest">THE COLLECTION</p>
-        </div>
-        <div className="mt-8">
+        <p className="section-kicker">The collection</p>
+        <div className="mt-2">
           <CardDemo />
         </div>
       </motion.div>
@@ -45,6 +39,7 @@ const App = () => {
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }}
         variants={fadeUpVariants}
+        className="border-t border-black/10 bg-[#f3ecdf]"
       >
         <Process />
       </motion.div>
@@ -55,6 +50,7 @@ const App = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeUpVariants}
+        className="border-t border-black/10 bg-[#f5f1ea]"
       >
         <EmailSection />
       </motion.div>

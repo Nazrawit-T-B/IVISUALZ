@@ -14,7 +14,7 @@ const LetterGlitch = ({
   const letters = useRef([]);
   const grid = useRef({ columns: 0, rows: 0 });
   const context = useRef(null);
-  const lastGlitchTime = useRef(Date.now());
+  const lastGlitchTime = useRef(0);
 
   const lettersAndSymbols = Array.from(characters);
 
@@ -157,6 +157,10 @@ const LetterGlitch = ({
 
   const animate = () => {
     const now = Date.now();
+    if (lastGlitchTime.current === 0) {
+      lastGlitchTime.current = now;
+    }
+
     if (now - lastGlitchTime.current >= glitchSpeed) {
       updateLetters();
       drawLetters();

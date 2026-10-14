@@ -1,5 +1,3 @@
-import ProductCard from "src/components/shadcn-space/card/card-03.jsx";
-
 const Footer = () => {
   return (
     <footer className="border-t  bg-gray-950 text-gray-400">

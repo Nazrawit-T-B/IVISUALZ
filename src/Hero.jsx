@@ -1,40 +1,30 @@
 import { Button } from "./components/ui/button";
 import "./hero.css";
+
 const Hero = () => {
   return (
-    <>
-      
-        <div className="hero  pl-4">
-          <div className="pt-0">
-            <p>ALGORITHMS MADE VISUAL</p>
-          </div>
-          <div className="title flex flex-col gap-2 w-full md:w-[70%]">
-            <h1>
-              Interesting Algorithms and Comp Sci concepts Visualized for better
-              learning and Understanding
-            </h1>
-          </div>
-          <div className="sub-title">
-            Built for Students and Passionate Enthusaists
-          </div>
-          <div className="Btns">
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-gray-700 bg-transparent"
-            >
-              Explore
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="text-gray-700 bg-transparent"
-            >
-              Know More
-            </Button>
-          </div>
-        </div>
-    </>
+    <div className="hero">
+      <p className="eyebrow">Algorithms made visual</p>
+
+      <div className="title flex flex-col gap-2">
+        <h1>
+          Interesting algorithms and computer science concepts visualized for
+          better learning and understanding.
+        </h1>
+      </div>
+
+      <div className="sub-title">Built for students and passionate enthusiasts.</div>
+
+      <div className="Btns">
+        <Button variant="outline" size="lg" className="hero-button">
+          Explore
+        </Button>
+        <Button variant="outline" size="lg" className="hero-button">
+          Know more
+        </Button>
+      </div>
+    </div>
   );
 };
+
 export default Hero;
