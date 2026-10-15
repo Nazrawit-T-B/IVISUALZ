@@ -1,39 +1,52 @@
 import Header from "@/Header";
-import { Separator } from 'src/components/ui/separator'
+import { Separator } from "@/components/ui/separator";
+
 const Learn = () => {
   return (
     <>
       <Header />
-      <div className="flex flex-col md:flex-row items-stretch justify-between gap-x-10 min-h-[50vh] w-full max-w-57xl mx-auto px-6">
-        <div className="hero w-full md:w-[50%]">
-          <div>
-            <p>COMPRESSION ALGORITHM</p>
-          </div>
-          <div className="title flex flex-col gap-2">
-            <h1>Huffman Encoding</h1>
-          </div>
-          <div className="sub-title">
-            <p>
-              The oldest encryption method on record- attirbuted to Julius
-              Caesar
+
+      <main>
+        {/* Hero */}
+        <section className="mx-auto w-full max-w-7xl px-6 py-20">
+          <div className="hero w-full md:w-1/2">
+            <p className="eyebrow">COMPRESSION ALGORITHM</p>
+
+            <div className="title">
+              <h1>Huffman Coding</h1>
+            </div>
+
+            <p className="sub-title">
+              A lossless data compression algorithm.
             </p>
           </div>
-        </div>
-        <div className="hidden md:block md:w-[40%] relative min-h-[300px] md:min-h-full [mask-image:radial-gradient(circle,black_60%,transparent_100%)] pt-15">
-          <div class="disk-section"></div>
-        </div>
-      </div>
-      <Separator className="bg-gray-800 dark:bg-gray-900 my-4" />
-      <div className="algo-description p-5">
-        <h1>What is Huffman Encoding ? </h1>
-        <br/>
-        <p> The Caesar Cipher is one of the simplest and earliest encryption methods, substituting letters by shifting them a fixed number of positions in the alphabet, laying the foundation for modern cryptographic techniques. While the Caesar Cipher is easy to implement and useful for educational purposes, its limited keyspace and vulnerablity to brute force and frequency analysis make it unsuitable for serious encryption needs.</p>
-        <br/>
-        <p> In the Caesar Cipher, letters in plain text are replaced by other letters or symbols by shifting them a fixed number of positions in the alphabet. This encryption falls under Substitution ciphers.</p>
-        <br/>
-        <h1>How it Works</h1>
-      </div>
+        </section>
+
+        <Separator className="bg-gray-800" />
+
+        {/* Description */}
+        <section className="algo-description">
+          <h2>What is Huffman Coding?</h2>
+
+          <p>
+            Huffman coding is a lossless data compression algorithm that uses
+            variable-length codes to represent symbols based on their
+            frequencies. The basic idea behinf Huffman coding is to assign shorter codes to more frequent characters and longer codeds to less frequent characters, thus reducing the overall size of the data. It assigns shorter codes to more frequent symbols
+            and longer codes to less frequent symbols, resulting in efficient
+            encoding and reduced storage space.
+          </p>
+
+          <p>
+            The algorithm works by building a binary tree based on the
+            frequency of each symbol. The resulting tree determines the
+            variable-length binary code assigned to each symbol.
+          </p>
+
+          <h2>How It Works</h2>
+        </section>
+      </main>
     </>
   );
 };
+
 export default Learn;
