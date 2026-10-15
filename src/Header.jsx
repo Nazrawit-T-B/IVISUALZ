@@ -1,30 +1,50 @@
+import { useEffect, useState } from "react";
 import { Separator } from "@/components/ui/separator";
 import { IconBrandGithub } from "@tabler/icons-react";
 import "./header.css";
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 80);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <>
-      <header className="w-full mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-1">
-          <h1 className="m-0 text-2xl font-bold tracking-[-0.08em] text-black">IVISUALZ</h1>
-        </div>
+    <header className={`site-header ${scrolled ? "scrolled" : ""}`}>
+      <div className="header-logo">
+      <h1 className="logo-text">IVISUALZ</h1>
+    
+      </div>
 
-        <div className="header-right">
-          <ul>
-            <li>
-              <a href="#algorithms">ALGORITHMS</a>
-            </li>
-            <li>
-              <a href="#how-it-works">HOW IT WORKS</a>
-            </li>
-            <li>
-              <a href="#about">ABOUT</a>
-            </li>
+      <div className="header-right">
+        <ul>
+          <li>
+            <a href="#algorithms">ALGORITHMS</a>
+          </li>
 
-            <Separator orientation="vertical" className="h-4 bg-black/40" />
+          <li>
+            <a href="#how-it-works">HOW IT WORKS</a>
+          </li>
 
-            <li>
+          <li>
+            <a href="#about">CONTACT</a>
+          </li>
+
+          <Separator
+            orientation="vertical"
+            className="h-4 bg-black/40"
+          />
+
+           <li>
               <a
                 href="https://github.com"
                 target="_blank"
@@ -35,12 +55,9 @@ const Header = () => {
                 <IconBrandGithub className="h-4 w-4" />
               </a>
             </li>
-          </ul>
-        </div>
-      </header>
-
-      <Separator className="bg-black/20 my-1" />
-    </>
+        </ul>
+      </div>
+    </header>
   );
 };
 
