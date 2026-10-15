@@ -31,12 +31,12 @@ export default function CardDemo() {
         </CardHeader>
         <CardFooter className="mt-auto flex gap-3 pt-4">
           <Link to="/visualize/huffman">
-            <button className="rounded-md bg-black px-4 py-2 text-sm text-white hover:bg-[#d9773e] mr-5">
+            <button className="md bg-black px-4 py-2 text-sm text-white hover:bg-[#d9773e] mr-5">
               Visualize
             </button>
           </Link>
           <Link to="/learn/huffman">
-            <button className="rounded-md border border-black/15 bg-transparent px-4 py-2 text-sm text-black hover:bg-[#f4ede4]">
+            <button className="md border border-black/15 bg-transparent px-4 py-2 text-sm text-black hover:bg-[#f4ede4]">
               Learn More
             </button>
           </Link>
@@ -61,12 +61,12 @@ export default function CardDemo() {
         </CardHeader>
         <CardFooter className="mt-auto flex gap-3 pt-4">
           <Link to="/visualize/ceasersCipher">
-            <button className="rounded-md bg-black px-4 py-2 text-sm text-white hover:bg-[#d9773e] mr-5">
+            <button className="md bg-black px-4 py-2 text-sm text-white hover:bg-[#d9773e] mr-5">
               Visualize
             </button>
           </Link>
           <Link to="/learn/ceasersCipher">
-            <button className="rounded-md border border-black/15 bg-transparent px-4 py-2 text-sm text-black hover:bg-[#f4ede4]">
+            <button className="md border border-black/15 bg-transparent px-4 py-2 text-sm text-black hover:bg-[#f4ede4]">
               Learn More
             </button>
           </Link>
@@ -91,10 +91,10 @@ export default function CardDemo() {
           </CardDescription>
         </CardHeader>
         <CardFooter className="mt-auto flex gap-3 pt-4">
-          <button className="rounded-md bg-black px-4 py-2 text-sm text-white hover:bg-[#d9773e] mr-5">
+          <button className="md bg-black px-4 py-2 text-sm text-white hover:bg-[#d9773e] mr-5">
             Visualize
           </button>
-          <button className="rounded-md border border-black/15 bg-transparent px-4 py-2 text-sm text-black hover:bg-[#f4ede4]">
+          <button className="md border border-black/15 bg-transparent px-4 py-2 text-sm text-black hover:bg-[#f4ede4]">
             Learn More
           </button>
         </CardFooter>
@@ -118,10 +118,10 @@ export default function CardDemo() {
           </CardDescription>
         </CardHeader>
         <CardFooter className="mt-auto flex gap-3 pt-4">
-          <button className="rounded-md bg-black px-4 py-2 text-sm text-white hover:bg-[#d9773e] mr-5">
+          <button className="md bg-black px-4 py-2 text-sm text-white hover:bg-[#d9773e] mr-5">
             Visualize
           </button>
-          <button className="rounded-md border border-black/15 bg-transparent px-4 py-2 text-sm text-black hover:bg-[#f4ede4]">
+          <button className="md border border-black/15 bg-transparent px-4 py-2 text-sm text-black hover:bg-[#f4ede4]">
             Learn More
           </button>
         </CardFooter>
@@ -145,10 +145,10 @@ export default function CardDemo() {
           </CardDescription>
         </CardHeader>
         <CardFooter className="mt-auto flex gap-3 pt-4">
-          <button className="rounded-md bg-black px-4 py-2 text-sm text-white hover:bg-[#d9773e] mr-5">
+          <button className="md bg-black px-4 py-2 text-sm text-white hover:bg-[#d9773e] mr-5">
             Visualize
           </button>
-          <button className="rounded-md border border-black/15 bg-transparent px-4 py-2 text-sm text-black hover:bg-[#f4ede4]">
+          <button className="md border border-black/15 bg-transparent px-4 py-2 text-sm text-black hover:bg-[#f4ede4]">
             Learn More
           </button>
         </CardFooter>
@@ -172,10 +172,10 @@ export default function CardDemo() {
           </CardDescription>
         </CardHeader>
         <CardFooter className="mt-auto flex gap-3 pt-4">
-          <button className="rounded-md bg-black px-4 py-2 text-sm text-white hover:bg-[#d9773e] mr-5">
+          <button className="md bg-black px-4 py-2 text-sm text-white hover:bg-[#d9773e] mr-5">
             Visualize
           </button>
-          <button className="rounded-md border border-black/15 bg-transparent px-4 py-2 text-sm text-black hover:bg-[#f4ede4]">
+          <button className="md border border-black/15 bg-transparent px-4 py-2 text-sm text-black hover:bg-[#f4ede4]">
             Learn More
           </button>
         </CardFooter>
