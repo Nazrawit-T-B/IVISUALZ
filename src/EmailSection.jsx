@@ -1,4 +1,3 @@
-import "./email.css";
 import { Card, CardFooter, CardContent } from "./components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -55,7 +54,7 @@ const EmailSection = () => {
             <CardFooter className="flex-col gap-3 border-t border-black/10 px-6 py-6 sm:px-7">
               <Button
                 type="submit"
-                className="w-full rounded-lg bg-black px-4 py-2.5 font-medium text-white transition hover:bg-[#d9773e] hover:text-white"
+                className="w-full lg bg-black px-4 py-2.5 font-medium text-white transition hover:bg-[#d9773e] hover:text-white"
               >
                 Send request
               </Button>
