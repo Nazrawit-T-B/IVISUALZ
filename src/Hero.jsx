@@ -8,12 +8,11 @@ const Hero = () => {
 
       <div className="title flex flex-col gap-2">
         <h1>
-          Interesting algorithms and computer science concepts visualized for
-          better learning and understanding.
+         See the algorithms in action and understand the logic behind them.
         </h1>
       </div>
 
-      <div className="sub-title">Built for students and passionate enthusiasts.</div>
+      <div className="sub-title">Interactive visualizations for algorithms, cryptography, and computer science.</div>
 
       <div className="Btns">
         <Button variant="outline" size="lg" className="hero-button">
