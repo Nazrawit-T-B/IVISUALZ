@@ -3,7 +3,7 @@ import App from './App.jsx';
 import HuffmanVisualizer from './pages/huffman/Visualizer';
 import HuffmanLearn from './pages/huffman/Learn';
 import CeasersLearn from './pages/cipher/Learn.jsx';
-
+import CeasersVisualizer from './pages/cipher/Visualizer.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -20,7 +20,11 @@ const router = createBrowserRouter([
   {
     path:'/learn/ceasersCipher',
     element: <CeasersLearn/>,
-  }
+  },
+  {
+    path: '/visualize/ceasersCipher',
+    element: <CeasersVisualizer />,
+  },
  
 ]);
 
